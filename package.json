@@ -1,0 +1,30 @@
+{
+  "name": "@less-ifc/types",
+  "version": "0.0.1",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "yarn build --watch",
+    "release": ". ./scripts/release/release.sh"
+  },
+  "engines": {
+    "node": ">=20.18.0",
+    "npm": ">=10.8.2",
+    "yarn": ">=1.22.22"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
